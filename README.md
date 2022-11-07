@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL]()
-- Live Site URL: [live site URL]()
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/responsive-clipboard-landing-page-master-5POzi2_e3i)
+- Live Site URL: [live site URL](https://abdulelah-abacar.github.io/clipboard-landing-page-master/)
 
 ## My process
 
