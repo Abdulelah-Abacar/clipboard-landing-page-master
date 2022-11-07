@@ -1,0 +1,344 @@
+@font-face {
+  font-family: "Bai Jamjuree";
+  src: url(assets/font/Bai_Jamjuree/BaiJamjuree-Regular.ttf),
+    url(assets/font/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors */
+  /* Primary */
+  --Strong-Cyan: hsl(171, 66%, 44%); /* ios download btn & hover eff */
+  --Light-Blue: hsl(233, 100%, 69%); /* mac download btn */
+
+  /* Neutral */
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%); /* heading color */
+  --Grayish-Blue: hsl(201, 11%, 66%); /* pragraph color */
+}
+/* ================================== START GLOBAL ===================================== */
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.heading {
+  max-width: 60rem;
+  text-align: center;
+}
+.heading h1 {
+  font-size: 3.5rem;
+  color: var(--Dark-Grayish-Blue);
+}
+.heading p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  padding: 2rem 3rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 60%;
+}
+@media (max-width: 767px) {
+  .btn-container {
+    width: 100%;
+  }
+}
+.btn {
+  padding: 1.5rem 5rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+.ios {
+  transition: .3s;
+  background-color: var(--Strong-Cyan);
+  box-shadow: 0rem .3rem 0 0rem hsl(171deg 70% 33%),
+              0 .5rem 1.5rem var(--Strong-Cyan);
+}
+.ios:hover {
+  background-color: hsla(171, 66%, 44%, 0.909);
+}
+.mac {
+  background-color: var(--Light-Blue);
+  box-shadow: 0rem .3rem 0 0rem hsl(233deg 58% 53%),
+              0 .5rem 1.5rem var(--Light-Blue);
+}
+@media (max-width: 767px) {
+  .mac {
+    margin-top: 3rem;
+  }
+}
+.mac:hover {
+  background-color: hsla(233, 100%, 69%, 0.909);
+}
+.sc {
+  padding-bottom: 15rem;
+  position: relative;
+}
+.container {
+  padding-left: 12rem;
+  padding-right: 12rem;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    place-items: center;
+  }
+}
+body {
+  font: 1.8rem "Bai Jamjuree";
+}
+/* ================================== END GLOBAL ===================================== */
+
+/* ================================== START LANDING ===================================== */
+.landing {
+  position: relative;
+  height: 50vh;
+}
+.landing .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: url(assets/images/bg-header-desktop.png);
+  background-size: cover;
+}
+@media (max-width: 600px) {
+  .landing .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image: url(assets/images/bg-header-mobile.png);
+    background-size: cover;
+  }
+}
+.landing .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ================================== END LANDING ===================================== */
+
+/* ================================== START SECOND-SECTION ===================================== */
+.second-section .content {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+.second-section .content .image {
+  width: 65rem;
+}
+@media (max-width: 767px) {
+  .second-section .content .image {
+    width: 100%;
+  }
+}
+.second-section .content .image img {
+  position: absolute;
+  left: -2.5rem;
+  width: 65rem;
+}
+@media (max-width: 767px) {
+  .second-section .content .image img {
+    position: static;
+    left: 0;
+    width: 100%;
+  }
+}
+.second-section .content .text {
+  width: 33rem;
+}
+@media (max-width: 767px) {
+  .second-section .content .text {
+    width: 100%;
+  }
+}
+.second-section .content .text ul {
+  width: 100%;
+}
+.second-section .content .text ul li {
+  margin-top: 5rem;
+}
+.second-section .content .text ul li h2 {
+  text-align: left;
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .second-section .content .text ul li h2 {
+    text-align: center;
+  }
+}
+.second-section .content .text ul li p {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  line-height: 2.5rem;
+}
+@media (max-width: 767px) {
+  .second-section .content .text ul li p {
+    text-align: center;
+  }
+}
+/* ================================== END SECOND-SECTION ===================================== */
+
+/* ================================== START THEERD-SECTION ===================================== */
+.theerd-section .content {
+  margin-top: 5rem;
+}
+.theerd-section .content .image {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .theerd-section .content .image {
+    width: 100%;
+  }
+  .theerd-section .content .image img {
+    max-width: 100%;
+  }
+}
+/* ================================== END THEERD-SECTION ===================================== */
+
+/* ================================== START FOURTH-SECTION ===================================== */
+.fourth-section .content {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+.fourth-section .content .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fourth-section .content .row .col-3 {
+  text-align: center;
+  width: calc(95% / 3);
+  padding: 1rem;
+}
+@media (max-width: 767px) {
+  .fourth-section .content .row .col-3 {
+    width: 100%;
+    text-align: center;
+  }
+  .fourth-section .content .row .col-5 {
+    width: 100%;
+    text-align: center;
+  }
+  .fourth-section .content .row .col-5:not(:last-of-type) {
+    margin-bottom: 5rem;
+  }
+}
+.fourth-section .content .row .col-3 .img {
+  height: 5rem;
+}
+.fourth-section .content .row .col-3 .title {
+  margin: 2rem 0;
+  color: var(--Dark-Grayish-Blue);
+}
+.fourth-section .content .row .col-3 .con p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
+/* ================================== END FOURTH-SECTION ===================================== */
+
+/* ================================== START FOOTER ===================================== */
+footer {
+  background-color: hsl(201deg 6% 92%);
+  padding: 1rem 0;
+}
+@media (max-width: 767px) {
+  footer {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  footer .container {
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+}
+footer .logo {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+}
+footer .logo img {
+  max-width: 100%;
+}
+footer .links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: .8;
+}
+@media (max-width: 767px) {
+  footer .links {
+    flex-grow: 0;
+  }
+}
+footer .links a {
+  text-align: left;
+  width: calc(100% / 3);
+  padding: 1rem 0;
+  color: var(--Grayish-Blue);
+  font-weight: 600;
+  transition: .3s;
+}
+@media (max-width: 767px) {
+  footer .links a {
+    text-align: center;
+    width: 100%;
+  }
+}
+footer .links a:hover {
+  color: var(--Strong-Cyan);
+}
+footer .contact {
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+}
+footer .contact img {
+  cursor: pointer;
+  transition: .3s;
+}
+footer .contact img:hover {
+  filter: invert(57%) sepia(35%) saturate(894%) hue-rotate(122deg) brightness(102%) contrast(81%);
+}
+/* ================================== END FOOTER ===================================== */
